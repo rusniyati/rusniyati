@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    padding: 20px;
+    background-color: #a8d1f0;
+    transition: background-color 0.3s;
+}
+
+.container {
+    margin: 9px auto;
+    width: 500px;
+    padding: 100px;
+    background: rgb(243, 139, 193);
+    box-shadow: 0 0 5px rgba(17, 22, 18, 0.461);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.bgColor, .fontSize {
+    margin-bottom: 10px;
+}
+
+input[type="taks"], label, select {
+    width: 10%;
+    padding: 7px;
+    margin: 10px;
+    border: 2px solid #5f1bc5;
+    border-radius: 9px;
+    font-size: 23px;
+    display: flex;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    padding: 10px;
+    border-bottom: 1px solid #041b4a;
+    margin-top: 3px;
+    border-radius: 10px;
+    background-color: #cfc8cf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close {
+   
+    color: rgba(234, 29, 6, 0.911);
+    border: none;
+    padding: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .container, .dark-mode li {
+    background-color: #444;
+}

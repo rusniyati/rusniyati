@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do App</title>  
+    <link rel="stylesheet" href="prak3TW.css">
+    </head>
+<body>
+
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <div class="bgColor">
+        <label for="bgColor">Ubah Warna Latar Belakang:</label>
+        <select id="bgColor" onchange="changeBackgroundColor()">
+            <option value="">Pilih Warna</option>
+            <option value="white">Putih</option>
+            <option value="lightblue">Biru Muda</option>
+            <option value="lightgreen">Hijau Muda</option>
+            <option value="lightyellow">Kuning Muda</option>
+        </select>
+    </div>
+
+    <div class="fontSize">
+        <label for="fontSize">Ubah Ukuran Font:</label>
+        <input type="range" id="fontSize" min="12" max="24" value="16" oninput="changeFontSize()">
+    </div>
+
+    <div class="container">
+        <h2>My To-Do List</h2>
+        <input type="text" id="newTask" placeholder="Add a new task...">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="prak3.js"></script>
+</body>
+</html>
